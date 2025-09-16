@@ -3,6 +3,7 @@ import GoogleProvider from 'next-auth/providers/google'
 import config from '@/config/environment'
 
 const handler = NextAuth({
+  secret: config.nextAuth.secret,
   providers: [
     GoogleProvider({
       clientId: config.google.clientId,

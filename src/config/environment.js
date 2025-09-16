@@ -3,7 +3,7 @@ const config = {
   // NextAuth Configuration
   nextAuth: {
     url: process.env.NEXT_PUBLIC_NEXTAUTH_URL || 'http://localhost:3000',
-    secret: process.env.NEXT_PUBLIC_NEXTAUTH_SECRET || 'your-nextauth-secret-key-here',
+    secret: process.env.NEXTAUTH_SECRET || process.env.NEXT_PUBLIC_NEXTAUTH_SECRET || 'your-nextauth-secret-key-here',
   },
   
   // Google OAuth Configuration
