@@ -1,11 +1,11 @@
 import React from 'react'
 import PublicLayout from '@/components/Layouts/PublicLayout'
-import HomePage from '@/components/Pages/Public/Home'
+import About from '@/components/Pages/Public/About'
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <PublicLayout>
-      <HomePage />
+      <About />
     </PublicLayout>
-  );
+  )
 }

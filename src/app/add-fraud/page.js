@@ -1,11 +1,11 @@
 import React from 'react'
 import PublicLayout from '@/components/Layouts/PublicLayout'
-import HomePage from '@/components/Pages/Public/Home'
+import FraudPage from '@/components/Pages/Public/AddFrauds'
 
-export default function Home() {
+export default function AddFraudPage() {
   return (
     <PublicLayout>
-      <HomePage />
+      <FraudPage />
     </PublicLayout>
-  );
+  )
 }
