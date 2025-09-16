@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">ভূমিকা</h2>
               <p className="text-gray-300 leading-relaxed">
-                FraudChecker ("আমরা", "আমাদের", "সার্ভিস") আপনার গোপনীয়তা রক্ষা করতে প্রতিশ্রুতিবদ্ধ। 
+                FraudChecker (আমরা, আমাদের, সার্ভিস) আপনার গোপনীয়তা রক্ষা করতে প্রতিশ্রুতিবদ্ধ। 
                 এই গোপনীয়তা নীতি ব্যাখ্যা করে যে আমরা কিভাবে আপনার ব্যক্তিগত তথ্য সংগ্রহ, ব্যবহার, 
                 এবং সুরক্ষিত রাখি যখন আপনি আমাদের ওয়েবসাইট এবং সেবা ব্যবহার করেন।
               </p>

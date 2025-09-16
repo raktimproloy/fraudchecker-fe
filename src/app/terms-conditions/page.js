@@ -30,7 +30,7 @@ export default function TermsConditionsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">ভূমিকা</h2>
               <p className="text-gray-300 leading-relaxed">
-                এই শর্তাবলী ("শর্তাবলী") FraudChecker প্ল্যাটফর্ম ব্যবহারের জন্য প্রযোজ্য। 
+                এই শর্তাবলী (শর্তাবলী) FraudChecker প্ল্যাটফর্ম ব্যবহারের জন্য প্রযোজ্য। 
                 আমাদের সেবা ব্যবহার করার মাধ্যমে আপনি এই শর্তাবলী মেনে চলতে সম্মত হচ্ছেন। 
                 যদি আপনি এই শর্তাবলীর সাথে একমত না হন, তাহলে আমাদের সেবা ব্যবহার করবেন না।
               </p>
@@ -232,7 +232,7 @@ export default function TermsConditionsPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-orange-400 mr-2">⚠</span>
-                    <span>সেবা "যেমন আছে" ভিত্তিতে প্রদান করা হয়</span>
+                    <span>সেবা যেমন আছে ভিত্তিতে প্রদান করা হয়</span>
                   </li>
                 </ul>
               </div>
