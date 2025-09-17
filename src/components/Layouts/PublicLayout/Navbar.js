@@ -167,19 +167,19 @@ const PublicNavbar = () => {
 
                 {isUserMenuOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg z-50 border border-gray-700">
-                    <Link
+                    {/* <Link
                       href="/profile"
                       className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 transition-colors duration-200"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
                       My Profile
-                    </Link>
+                    </Link> */}
                     <Link
-                      href="/my-experiences"
+                      href="/my-report"
                       className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 transition-colors duration-200"
                       onClick={() => setIsUserMenuOpen(false)}
                     >
-                      My Experiences
+                      My Reports
                     </Link>
                     <button
                       onClick={handleLogout}
