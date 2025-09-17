@@ -41,6 +41,9 @@ export const AuthProvider = ({ children }) => {
       // Store token in localStorage for API calls
       if (session.accessToken) {
         localStorage.setItem('accessToken', session.accessToken);
+        localStorage.setItem('user', JSON.stringify(userData));
+        localStorage.setItem('isAuthenticated', 'true');
+        localStorage.setItem('isAdmin', 'false');
       }
     } else if (status === 'unauthenticated') {
       // User is not authenticated
@@ -51,13 +54,16 @@ export const AuthProvider = ({ children }) => {
       
       // Clear token from localStorage
       localStorage.removeItem('accessToken');
+      localStorage.removeItem('user');
+      localStorage.removeItem('isAuthenticated');
+      localStorage.removeItem('isAdmin');
     } else if (status === 'loading') {
       setIsLoading(true);
     }
   }, [session, status]);
 
+  // Check for existing authentication on app load (fallback)
   useEffect(() => {
-    // Check for existing authentication on app load (fallback)
     if (status === 'unauthenticated') {
       const checkAuth = () => {
         try {
@@ -81,7 +87,7 @@ export const AuthProvider = ({ children }) => {
 
       checkAuth();
     }
-  }, [status]);
+  }, []);
 
   const login = async (email, password, isAdminUser = false) => {
     try {
