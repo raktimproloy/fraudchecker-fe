@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAuthSession } from '../../../hooks/useAuthSession';
-import { apiService } from '../../../services/api';
-import SuccessMessage from '../../Common/SuccessMessage';
-import ReportCard from '../../Common/ReportCard';
-import ReportFilters from '../../Common/ReportFilters';
-import StatusUpdateModal from '../../Common/StatusUpdateModal';
+import { useAuthSession } from '../../../../hooks/useAuthSession';
+import apiService from '../../../../services/api';
+import SuccessMessage from '../../../Common/SuccessMessage';
+import ReportCard from '../../../Common/ReportCard';
+import ReportFilters from '../../../Common/ReportFilters';
+import StatusUpdateModal from '../../../Common/StatusUpdateModal';
 
 const MyReports = () => {
   const { user, isAuthenticated } = useAuthSession();
